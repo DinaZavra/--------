@@ -10,7 +10,7 @@
 <%=sanitize product.description %>
 <div class="price_line">
 <span class="price"><%=product.price %></span>
-<%= button_to 'Add to Cart' , line_items_path(:stock_id => product),
+<%= button_to 'Add to Cart' , line_items_path(:stock_id => product.id),
 :remote => true %>
 </div>
 <% end %>
